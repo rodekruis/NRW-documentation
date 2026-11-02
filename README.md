@@ -1,6 +1,6 @@
 # NRW documentation
 
-This is the public documentation related to [NRW](https://github.com/rodekruis/IBF).
+This is the public documentation related to [NRW](https://github.com/rodekruis/NRW).
 
 ## NRW explained
 
