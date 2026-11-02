@@ -1,21 +1,21 @@
-### Definition of IBF
+### Definition of NRW
 
 A system that forecasts Early Warning alerts, disseminates notifications, and visualizes exposure information to support decision making, following the country advisory.
 
 ### System components & definitions
 
-The components of **IBF** are
+The components of **NRW** are
 
-* **IBF portal**, i.e. the frontend
-* **IBF API**, i.e. the backend
-* **IBF pipelines**, i.e. implementations of trigger models
-* **IBF database**
+* **NRW portal**, i.e. the frontend
+* **NRW API**, i.e. the backend
+* **NRW pipelines**, i.e. implementations of trigger models
+* **NRW database**
 
 ### Main Concepts
 
 NOTE: sometimes concepts refer to other concepts, which may be lower in the list.
 
-* **Hazard type**: IBF has separate pipelines per hazard type, such as *floods* and *drought*.
+* **Hazard type**: NRW has separate pipelines per hazard type, such as *floods* and *drought*.
 * **Pipeline run**: Each pipeline runs automatically with a certain frequency, which is hazard-type-specific, e.g. daily for *floods* or monthly for *drought*.
 * **Forecast**: Every pipeline run produces a forecast, which can be either one (or more) *alert(s)* or *no alert*.
 * **Forecast time**: Time when a forecast was issued, so when the pipeline was run.
@@ -39,9 +39,9 @@ NOTE: sometimes concepts refer to other concepts, which may be lower in the list
 * **Set trigger**: A *trigger* that is manually set by a user based on a pipeline *non-trigger alert*. In contrast to an automatically classified trigger.
 * **Notification**: An *alert* can or cannot lead to a notification, through *email* and/or *WhatsApp*.
 * **Advisory**: Advisory is the call action set per *alert class*. It can (when available) refer to an *EAP* or another contingency plan document
-* **Last upload time**: Last time the pipeline has successfully updated IBF API for a particular country and hazard-type.
+* **Last upload time**: Last time the pipeline has successfully updated NRW API for a particular country and hazard-type.
 * **Admin level**: Administrative level of administrative areas in a country, e.g. level 1 for Counties, 2 for Subcounties, 3 for Wards in Kenya.
 * **Admin area**: Particular administrative area, e.g. county 'Baringo' in Kenya. Having a *placeCode* as unique identifier, having geo-data on boundaries, and having any number of indicators with datapoints related to it.
-* **User role**: Role of a user, which determines what actions can be taken in the IBF Portal.
+* **User role**: Role of a user, which determines what actions can be taken in the NRW Portal.
 
 ![Glossary diagram](images/glossary-diagram.png)
